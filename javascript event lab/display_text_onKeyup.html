@@ -1,0 +1,47 @@
+<!-- Create a javascript to display the text 
+in red color and in uppercase
+ whenever a key is released from textfield -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>First Page</title>
+	<script>
+	
+		/*--- function to display the data of textfield on keyreleased in red color and in uppercase ---*/
+		function displayDataOnKeyUp()
+		{
+			/*--- fetching data from textfield ----*/
+			var data = document.getElementById("sentence").value
+			/*--------------------------------------*/
+            /*-- convet data into upper case--*/
+			
+            var upper=data.toUpperCase();
+            
+            /*--------------------------------------*/
+			/*---changing text color to red---*/
+			
+			var msg = "<font color=red>You entered : "+ upper + "</font>"
+			
+            /*--------------------------------------*/
+			
+			/*--- displaying  data into div ---*/
+			document.getElementById("message").innerHTML = msg
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Sentence : <input type="text" name="sentence" id="sentence" onkeyup="displayDataOnKeyUp()" required>
+		<br>
+		<br>
+
+		<div id="message">
+		</div>
+		<br>
+	
+	</form>
+</body>
+</html>

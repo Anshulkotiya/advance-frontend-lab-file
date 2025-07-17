@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1=parseInt(prompt("Enter the first number "));
+        var num2=parseInt(prompt("Enter the second number "));
+
+        document.write("The first Number is : "+ num1);
+        document.write("<br>The Second Number is : "+ num2);
+        
+        // create function
+        
+        function productNum(){
+            var product=num1*num2;
+            
+            // displaying result
+            
+                    document.write("The first Number is : "+ num1);
+                    document.write("<br>The Second Number is : "+ num2);
+
+                    document.write("<br>The product of the two numbers is : "+ product)
+            
+        }
+
+        
+    </script>
+</head>
+<body>
+    <br> <span>Click to Calculate the product</span>
+    <button onclick="productNum()">calculate</button>
+    
+</body>
+</html>

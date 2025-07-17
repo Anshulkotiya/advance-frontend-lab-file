@@ -1,0 +1,37 @@
+<!-- Question 1: Write a script in javascript to create a function to calculate perimeter of triangle. 
+Call this function when a button is clicked. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Perimeter</title>
+    <script>
+        // Example side lengths of the triangle
+        var a = parseInt(prompt("Enter the first side"));
+        var b = parseInt(prompt("Enter the second side"));
+        var c = parseInt(prompt("Enter the Third side"));
+        
+        document.write("First side of triangle- ",a);
+        document.write("<br>second side of triangle- ",b);
+        document.write("<br>third side of triangle- ",c);
+        
+        function calculatePerimeter() {
+            var perimeter = a + b + c;
+            
+            // Display the result
+            
+            document.write("First side of triangle- ",a);
+            document.write("<br>second side of triangle- ",b);
+            document.write("<br>third side of triangle- ",c);
+            
+            document.write("<br>The perimeter of the triangle is: " + perimeter);
+        }
+        </script>
+</head>
+<body>
+    <br>
+    <span>Click to Calculate Triangle Perimeter:</span>
+    <button onclick="calculatePerimeter()">Calculate</button>
+</body>
+</html>

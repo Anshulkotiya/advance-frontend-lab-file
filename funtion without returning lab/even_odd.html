@@ -1,0 +1,33 @@
+<!-- Question 2: Write a script in javascript to create a function to check a number is odd or even. 
+Call this function when a button is clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check even or odd</title>
+    <script>
+
+        var number =parseInt(prompt("Enter the number-"));
+
+        document.write("The number is " +number);
+
+        function checkOddEven() {
+            
+            if (isNaN(number)) {
+                document.write("Please enter a valid number.");
+            } else if (number % 2 == 0) {
+                document.write(number + " is an even number.");
+            } else {
+                document.write(number + " is an odd number.");
+            }
+        }
+        </script>
+</head>
+<body>
+    <br><span> Click to check number is odd or even </span>
+      <button onclick="checkOddEven()">Check</button>
+    
+</body>
+</html>

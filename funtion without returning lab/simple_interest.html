@@ -1,0 +1,39 @@
+<!-- Question 3: rite a script in javascript to create a function to calculate simple interest.
+ call this function when a button is clicked. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate simple interest</title>
+    <script>
+        
+        var principal=parseInt(prompt("Enter the principal amount "));
+        var rate=parseInt(prompt("Enter the rate of interest (per year) "));
+        var time=parseInt(prompt("Enter the time period (in year)"));
+
+        document.write("Principal Amount- "+ principal);
+        document.write("<br>Rate of interest (per year)- "+ rate);
+        document.write("<br>Time(in years)- "+ time);
+        
+        function calculate_SI() {
+            
+            simple_interest=(principal*rate*time)/100;
+            //displaying the result
+            document.write("Principal Amount- "+ principal);
+            document.write("<br>Rate of interest (per year)- "+ rate);
+            document.write("<br>Time(in years)- "+ time);
+            document.write("<br>Simple Interest- "+ simple_interest);
+            
+        }
+
+
+    </script>
+</head>
+<body>
+    <br><span>Click to calculate Simple Intreset </span>
+    <button onclick="calculate_SI()">Calculate</button>
+</body>
+</html>

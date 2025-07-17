@@ -1,0 +1,53 @@
+<!-- Question 2 : Create a javascript to
+ display copy the text of one textfield
+ into another textfield in uppercase 
+whenever key is released form first textfield. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy text</title>
+    <script>
+      	/*--- function to display the data of textfield on keyreleased  in uppercase ---*/
+        
+        function displayDataOnKeyUp(){
+
+
+            //    fectch data from textfield
+            var data=document.getElementById("sentence").value
+
+            /*---convet data into upper case---*/
+
+            
+            var upper=data.toUpperCase()
+
+
+            /*---Displaying data in the another text field---*/
+
+    
+
+                document.getElementById("message").value = upper
+
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <form action="">
+
+        sentence: <input type="text" name="sentence"  id="sentence" onkeyup="displayDataOnKeyUp()" required>
+        <br>
+        <br>
+        
+        your sentence:<input type="text" name="your sentence" id="message" >
+       
+    </form>
+    
+</body>
+</html>
